@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking time to help me improve myself.</p>
+    </header>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <p>Where did you hear about me?</p>
+                <select id="dropdown" name="hear" class="form-control" required>
+                    <option disabled selected value>Choose one</option>
+                    <option value="1">Friend</option>
+                    <option value="2">Employee</option>
+                    <option value="3">Social Media</option>
+                    <option value="4">You contacted me</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Do this Survey Form makes you satisfied?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked>Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>What does your company do?</p>
+                <select id="kolejne" class="form-control" name="kolejne" required>
+                    <option disabled selected value>Choose one</option>
+                    <option value="1">Front-end Web Development</option>
+                    <option value="2">Back-end Web Development</option>
+                    <option value="3">Mobile Application </option>
+                    <option value="4">Game Development</option>
+                    <option value="4">Desktop Application</option>
+                    <option value="4">System Programming</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which programming language is using most often by your company<span class="clue">(Check all that
+                        apply) </span></p>
+                <label>
+                    <input name="prefer" value="python" type="checkbox" class="input-checkbox">Python</label>
+                <label>
+                    <input name="prefer" value="java" type="checkbox" class="input-checkbox">Java</label>
+                <label>
+                    <input name="prefer" value="java-script" type="checkbox" class="input-checkbox">JavaScript </label>
+                <label>
+                    <input name="prefer" value="c#" type="checkbox" class="input-checkbox">C#</label>
+                <label>
+                    <input name="prefer" value="cc+" type="checkbox" class="input-checkbox">C/C++</label>
+                <label>
+                    <input name="prefer" value="php" type="checkbox" class="input-checkbox">PHP</label>
+                <label>
+                    <input name="prefer" value="swift" type="checkbox" class="input-checkbox">Swift</label>
+                <label>
+                    <input name="prefer" value="objective-c" type="checkbox" class="input-checkbox">Objective-C</label>
+                <label>
+                    <input name="prefer" value="kotlin" type="checkbox" class="input-checkbox">Kotlin</label>
+                <label>
+                    <input name="prefer" value="html-css" type="checkbox" class="input-checkbox">HTML/CSS</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-button" id="submit">Submit</button>
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
